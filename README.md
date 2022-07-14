@@ -29,14 +29,14 @@ Two ATMega32 micro-controllers was used, one to read the temperature value and a
 * Makes a red warning LED blink if the temperature is higher than 55 degrees. (Cooler stops working at this point)
 
 
-# Usage
+# Setup
 
-Choose a platform to code ATMega32. (PlatformIO is recommended)   
-Now build new .hex files out of the codes if you modified them, or just use the ones provided in [proteus](proteus/hex) folder and load them to their corresponding ATMega32 chips in the circuit design.  
-Finally, run the circuit!
+1. Choose a platform to code ATMega32. (PlatformIO is recommended)   
+2. Build new .hex files out of the codes if you modified them, or just use the ones provided in [hex folder](proteus/hex) and load them to their corresponding ATMega32 chips in the circuit design ([proteus file](proteus/circuit.pdsprj)).  
+3. Run the circuit!
 
 ## Notes
 
-* It doesn't matter what platform you use, just set the `Micro-Controller: atmega32` and `MCU Frequency: 8000000L` in it. (For example in PlatformIO you must set `board_build.mcu` and `board_build.f_cpu` in **platformio.ini** file to the mentioned values)
+* It doesn't matter what platform you use, just set the `Micro-Controller: atmega32` and `MCU Frequency: 8000000L`. (For example in PlatformIO you must set `board_build.mcu` and `board_build.f_cpu` in **platformio.ini** file to the mentioned values)
 
 * Make sure that the ATMega32 chips in the circuit design also have the same MCU Frequency as what we set in the last note.
